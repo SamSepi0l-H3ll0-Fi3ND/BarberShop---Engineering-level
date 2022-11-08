@@ -1,38 +1,73 @@
-.App {
-  text-align: center;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Hero__background-img {
+  background-image: url(./Photos/andre-reis-1_DAlXy0wng-unsplash.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+.Service__card-one-bg {
+  background-image: url(./Photos/allef-vinicius-IvQeAVeJULw-unsplash.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.Service__card-two-bg {
+  background-image: url(./Photos/lesly-juarez-RukI4qZGlQs-unsplash.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.Service__card-three-bg {
+  background-image: url(./Photos/damian-barczak-5st86wYikQQ-unsplash.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.Service__card-four-bg {
+  background-image: url(./Photos/megan-bagshaw-YmaaUNbHHtw-unsplash.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.Service__card-five-bg {
+  background-image: url(./Photos/hair-spies-0KYSw5C2E00-unsplash.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.Service__card-six-bg {
+  background-image: url(./Photos/hannah-skelly-g5A9gO59ERU-unsplash.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.Service__card-seven-bg {
+  background-image: url(./Photos/hannes-wolf-SL5COy-RhCQ-unsplash.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.Service__card-eight-bg {
+  background-image: url(./Photos/man.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.Service__card-nine-bg {
+  background-image: url(./Photos/megan-bagshaw-YmaaUNbHHtw-unsplash.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
