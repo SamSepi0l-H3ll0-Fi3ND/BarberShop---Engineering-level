@@ -1,56 +1,50 @@
 const HeroSummit = () => {
   return (
-    <div class="flex w-full mt-14 text-white">
-      <div class="card w-96 ">
-        <div class="card-body">
-          <h2 class="card-title ">
-            <span>
-              {" "}
-              <span className="underline decoration-main-red underline-offset-8 ">
-                Stylow
-              </span>
-              o
+    <div class="grid grid-cols-3 gap-8 content-end h-3/6 ml-16 text-white lg:content-center">
+      <div class="card sm:mb">
+        <h2 class="card-title ">
+          <span>
+            {" "}
+            <span className="underline decoration-main-red underline-offset-8 ">
+              Stylow
             </span>
-          </h2>
-          <p>
-            If a dog chews shoes whose shoes does he choose? If a dog chews
-            shoes whose shoes does he choose?
-          </p>
-        </div>
+            o
+          </span>
+        </h2>
+        <p className=" invisible sm:visible">
+          If a dog chews shoes whose shoes does he choose? If a dog chews shoes
+          whose shoes does he choose?
+        </p>
       </div>
-      <div class="card w-96 ">
-        <div class="card-body">
-          <h2 class="card-title ">
-            <span>
-              {" "}
-              <span className="underline decoration-main-red underline-offset-8 ">
-                Dokład
-              </span>
-              nie
+      <div class="card ">
+        <h2 class="card-title  ">
+          <span>
+            {" "}
+            <span className="underline decoration-main-red underline-offset-8 ">
+              Dokład
             </span>
-          </h2>
-          <p>
-            If a dog chews shoes whose shoes does he choose? If a dog chews
-            shoes whose shoes does he choose?
-          </p>
-        </div>
+            nie
+          </span>
+        </h2>
+        <p className="invisible sm:visible">
+          If a dog chews shoes whose shoes does he choose? If a dog chews shoes
+          whose shoes does he choose?
+        </p>
       </div>
-      <div class="card w-96 h-max ">
-        <div class="card-body">
-          <h2 class="card-title ">
-            <span>
-              {" "}
-              <span className="underline decoration-main-red underline-offset-8 ">
-               Tak jak T
-              </span>
-              y chcesz
+      <div class="card  ">
+        <h2 class="card-title ">
+          <span>
+            {" "}
+            <span className="underline decoration-main-red underline-offset-8 ">
+              Tak jak T
             </span>
-          </h2>
-          <p className="h-1/4">
-            If a dog chews shoes whose shoes does he choose? If a dog chews
-            shoes whose shoes does he choose?
-          </p>
-        </div>
+            y chcesz
+          </span>
+        </h2>
+        <p className=" invisible sm:visible">
+          If a dog chews shoes whose shoes does he choose? If a dog chews shoes
+          whose shoes does he choose?
+        </p>
       </div>
     </div>
   );
