@@ -70,4 +70,29 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.About__hero_png{
+  background-image: url(./Photos/eugene-chystiakov-taZSJ6xmt48-unsplash.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 
+}
+.About__philosophy_png{
+  background-image: url(./Photos/salah-regouane-cByMWSOSYJg-unsplash.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+ 
+}
+.About__office_png{
+  background-image: url(./Photos/andrea-donato-MNu0n-3BIKs-unsplash.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+ 
+}
+.Reservation__background{
+  background-image: url(./Photos/unsplash_fX-qWsXl5x8.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
