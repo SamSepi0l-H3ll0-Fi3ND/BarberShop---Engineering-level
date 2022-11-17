@@ -59,12 +59,12 @@ const Navbar = () => {
       <div class="navbar-center hidden lg:flex">
         <ul class="menu menu-horizontal p-0">
           <li>
-            <a className="underline decoration-main-red underline-offset-8">
+            <a className=" btn btn-ghost underline decoration-main-red underline-offset-8">
               Home
             </a>
           </li>
           <li tabindex="0">
-            <a>
+            <a className=" btn btn-ghost">
               Work
               <svg
                 class="fill-current text-main-red"
@@ -78,20 +78,22 @@ const Navbar = () => {
             </a>
             <ul class="p-2">
               <li>
-                <a>Services</a>
+                <a className=" btn btn-ghost">Services</a>
               </li>
               <li>
-                <a>Opinions</a>
+                <a className=" btn btn-ghost">Opinions</a>
               </li>
             </ul>
           </li>
           <li>
-            <a>About</a>
+            <a className=" btn btn-ghost">About</a>
           </li>
         </ul>
       </div>
       <div class="navbar-end">
-        <a class="btn btn-ghost border-solid border-main-red rounded-none border-2 invisible sm:visible ">Contact</a>
+        <a class="btn btn-ghost border-solid border-main-red rounded-none border-2 invisible sm:visible ">
+          Contact
+        </a>
       </div>
     </div>
   );

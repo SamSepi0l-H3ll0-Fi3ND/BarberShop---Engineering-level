@@ -13,10 +13,7 @@ const Motto = () => {
       </div>
       <div className="flex justify-center mt-8 ">
         <p className="w-2/5 text-center mb-8">
-          Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
-          consectetur, adipisci velit... Lorem ipsum dolor sit amet, consectetur
-          adipiscing elit. Suspendisse porttitor metus non velit bibendum
-          malesuada.
+          My robimy byle jak, wszystko na trytkę i po swojemu, ale taniej od konkurencji czyli najlepiej. 
         </p>
       </div>
       <div className="flex justify-center pt-8 pb-8">

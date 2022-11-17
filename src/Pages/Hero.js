@@ -6,7 +6,7 @@ import Navbar from "../Components/Navbar";
 
 const Hero = () => {
   return (
-    <div className="h-screen Hero__background-img">
+    <div className="h-max xl:h-screen w-full Hero__background-img">
       <Navbar></Navbar>
       <HeroContent></HeroContent>
       <HeroSummit></HeroSummit>   

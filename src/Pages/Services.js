@@ -1,6 +1,6 @@
 const Services = () => {
   return (
-    <div className="bg-main-dark pt-8 px-40">
+    <div className="bg-main-dark pt-8 lg:px-10">
       <div className="flex flex-row">
         <hr className="border-main-red w-16 mx-4 my-4"></hr>
         <p className="text-white text-4xl"> Services </p>

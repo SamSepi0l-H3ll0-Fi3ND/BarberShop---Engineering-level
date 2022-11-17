@@ -8,26 +8,28 @@ const Footer = () => {
             <span className="text-white underline decoration-1 decoration-main-red underline-offset-8">
               rber
             </span>
-            <span className="text-main-red underline decoration-1 decoration-main-red underline-offset-8">Sh</span>
+            <span className="text-main-red underline decoration-1 decoration-main-red underline-offset-8">
+              Sh
+            </span>
             <span className="text-main-red">op</span>
           </div>
         </div>
         <div>
-          <span class="footer-title">Services</span>
+          <span class="footer-title text-main-red ">Services</span>
           <a class="link link-hover">Branding</a>
           <a class="link link-hover">Design</a>
           <a class="link link-hover">Marketing</a>
           <a class="link link-hover">Advertisement</a>
         </div>
         <div>
-          <span class="footer-title">Company</span>
+          <span class="footer-title text-main-red ">Company</span>
           <a class="link link-hover">About us</a>
           <a class="link link-hover">Contact</a>
           <a class="link link-hover">Jobs</a>
           <a class="link link-hover">Press kit</a>
         </div>
         <div>
-          <span class="footer-title">Legal</span>
+          <span class="footer-title text-main-red ">Legal</span>
           <a class="link link-hover">Terms of use</a>
           <a class="link link-hover">Privacy policy</a>
           <a class="link link-hover">Cookie policy</a>

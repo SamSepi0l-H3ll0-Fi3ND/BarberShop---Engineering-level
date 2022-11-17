@@ -1,6 +1,6 @@
 const Reservation = () => {
   return (
-    <div className="Reservation__background  w-full h-96">
+    <div className="Reservation__background w-full h-96">
       <div className="flex justify-center pt-8 pb-8">
         <div className=" border-2 border-l-main-red h-24 border-r-transparent border-t-transparent border-b-transparent rounded-full mb-8"></div>
       </div>
