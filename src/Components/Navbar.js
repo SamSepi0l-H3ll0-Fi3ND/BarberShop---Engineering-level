@@ -1,3 +1,4 @@
+import ButtonContact from "./ButtonContact";
 import Logo from "./Logo";
 const Navbar = () => {
   return (
@@ -91,9 +92,10 @@ const Navbar = () => {
         </ul>
       </div>
       <div class="navbar-end">
-        <a class="btn btn-ghost border-solid border-main-red rounded-none border-2 invisible sm:visible ">
+        {/* <a class="btn btn-ghost border-solid border-main-red rounded-none border-2 invisible sm:visible ">
           Contact
-        </a>
+        </a> */}
+        <ButtonContact></ButtonContact>
       </div>
     </div>
   );
