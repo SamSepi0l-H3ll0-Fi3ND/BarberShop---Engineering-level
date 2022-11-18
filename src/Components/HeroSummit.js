@@ -1,6 +1,6 @@
 const HeroSummit = () => {
   return (
-    <div class="grid grid-cols-3 gap-8  h-3/6 ml-16 text-white  md:content-center">
+    <div class="grid grid-cols-3 gap-8 h-3/6 ml-16 text-white md:content-center">
       <div class="card sm:">
         <h2 class="card-title">
           <span>
@@ -11,7 +11,7 @@ const HeroSummit = () => {
             o
           </span>
         </h2>
-        <p className="w-full   lg:w-2/4 invisible sm:visible">
+        <p className="w-full lg:w-2/4 invisible sm:visible">
           If a dog chews shoes whose shoes does he choose? If a dog chews shoes
           whose shoes does he choose?
         </p>

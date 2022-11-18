@@ -10,7 +10,7 @@ const Rewiews = () => {
           some opinions about us
         </p>
         <div className="grid grid-cols-1 place-items-center lg:grid-cols-3 pt-14">
-          <div class="card w-64 sm:w-96 bg-main-dark shadow-xl rounded-none border-solid border-2 border-main-red grid justify-items-center mb-24">
+          <div class="card w-64 mb-24 md:w-72 xl:w-80 bg-main-dark shadow-xl rounded-none border-solid border-2 border-main-red grid justify-items-center 2xl:w-96 ">
             <div class="card-body items-center text-center">
               <h2 class="card-title text-9xl text-main-red ">”</h2>
               <p className="text-white text-center pb-4">
@@ -63,7 +63,7 @@ const Rewiews = () => {
               <p className="text-center font-bold text-white">Designation</p>
             </div>
           </div>
-          <div class="card w-64 sm:w-96 bg-main-dark shadow-xl rounded-none border-solid border-2 border-main-red grid justify-items-center mb-24">
+          <div class="card w-64 mb-24 md:w-72 xl:w-80 bg-main-dark shadow-xl rounded-none border-solid border-2 border-main-red grid justify-items-center 2xl:w-96 ">
             <div class="card-body items-center text-center">
               <h2 class="card-title text-9xl text-main-red ">”</h2>
               <p className="text-white text-center pb-4">
@@ -116,7 +116,7 @@ const Rewiews = () => {
               <p className="text-center font-bold text-white">Designation</p>
             </div>
           </div>
-          <div class="card w-64 sm:w-96 bg-main-dark shadow-xl rounded-none border-solid border-2 border-main-red grid justify-items-center ">
+          <div class="card w-64 mb-24 md:w-72 xl:w-80 bg-main-dark shadow-xl rounded-none border-solid border-2 border-main-red grid justify-items-center 2xl:w-96 ">
             <div class="card-body items-center text-center">
               <h2 class="card-title text-9xl text-main-red ">”</h2>
               <p className="text-white text-center pb-4">
