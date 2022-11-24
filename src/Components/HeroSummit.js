@@ -4,7 +4,6 @@ const HeroSummit = () => {
       <div class="card sm:">
         <h2 class="card-title">
           <span>
-            {" "}
             <span className="underline decoration-main-red underline-offset-8 ">
               Stylow
             </span>
@@ -16,10 +15,9 @@ const HeroSummit = () => {
           whose shoes does he choose?
         </p>
       </div>
-      <div class="card ">
-        <h2 class="card-title  ">
+      <div class="card">
+        <h2 class="card-title">
           <span>
-            {" "}
             <span className="underline decoration-main-red underline-offset-8 ">
               Dokład
             </span>
@@ -31,10 +29,9 @@ const HeroSummit = () => {
           whose shoes does he choose?
         </p>
       </div>
-      <div class="card  ">
-        <h2 class="card-title ">
+      <div class="card">
+        <h2 class="card-title">
           <span>
-            {" "}
             <span className="underline decoration-main-red underline-offset-8 ">
               Tak jak T
             </span>

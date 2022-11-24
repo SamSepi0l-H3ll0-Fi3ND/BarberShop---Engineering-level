@@ -1,7 +1,7 @@
 const About = () => {
   return (
-    <div className="bg-main-dark md:h-max pt-8 px-10">
-      <div className="flex flex-row">
+    <div className="bg-main-dark md:h-max pt-8 px-10 ">
+      <div className="flex flex-row m-8">
         <hr className="border-main-red w-16 mx-4 my-4"></hr>
         <p className="text-white text-4xl"> About </p>
       </div>
