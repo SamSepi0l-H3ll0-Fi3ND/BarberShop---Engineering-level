@@ -1,3 +1,4 @@
+import AnchorLink from "react-anchor-link-smooth-scroll";
 import ButtonContact from "./ButtonContact";
 import Logo from "./Logo";
 const Navbar = () => {
@@ -60,9 +61,9 @@ const Navbar = () => {
       <div class="navbar-center hidden lg:flex">
         <ul class="menu menu-horizontal p-0">
           <li>
-            <a className=" btn btn-ghost underline decoration-main-red underline-offset-8">
+            <AnchorLink href="hero" className=" btn btn-ghost underline decoration-main-red underline-offset-8">
               Home
-            </a>
+            </AnchorLink>
           </li>
           <li tabindex="0">
             <a className=" btn btn-ghost">
@@ -79,15 +80,19 @@ const Navbar = () => {
             </a>
             <ul class="p-2">
               <li>
-                <a className=" btn btn-ghost">Services</a>
+                <AnchorLink href="#services" className=" btn btn-ghost">
+                  Services
+                </AnchorLink>
               </li>
               <li>
-                <a className=" btn btn-ghost">Opinions</a>
+                <AnchorLink href="#Rewiews" className="btn btn-ghost">Opinions</AnchorLink>
               </li>
             </ul>
           </li>
           <li>
-            <a className=" btn btn-ghost">About</a>
+            <AnchorLink href="#About" className=" btn btn-ghost">
+              About
+            </AnchorLink>
           </li>
         </ul>
       </div>

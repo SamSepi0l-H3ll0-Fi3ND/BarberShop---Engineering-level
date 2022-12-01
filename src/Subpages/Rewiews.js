@@ -1,7 +1,7 @@
 const Rewiews = () => {
   return (
     <div>
-      <div className="bg-main-gray pt-8 px-10">
+      <div className="bg-main-gray pt-8 px-10" id="Rewiews">
         <div className="flex flex-row">
           <hr className="border-main-red w-16 mx-4 my-4"></hr>
           <p className="text-white text-4xl"> Rewiews </p>

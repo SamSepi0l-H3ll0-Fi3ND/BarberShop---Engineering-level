@@ -7,7 +7,6 @@ const ButtonContact = () => {
       >
         Contact
       </label>
-
       <input type="checkbox" id="my-modal-4" class="modal-toggle" />
       <label for="my-modal-4" class="modal cursor-pointer">
         <label class=" modal-box relative rounded-none bg-main-dark" for="">
@@ -21,7 +20,9 @@ const ButtonContact = () => {
               </div>
             </div>
             <p className="text-2xl text-center">Jakub Figzał</p>
-            <p className="text-center text-main-red text-sm">My number: +48 321 321 312</p>
+            <p className="text-center text-main-red text-sm">
+              My number: +48 321 321 312
+            </p>
             <div class="grid grid-flow-col place-items-center ">
               <a>
                 <svg
@@ -57,7 +58,6 @@ const ButtonContact = () => {
                 </svg>
               </a>
             </div>
-           
           </div>
           <p class="py-4"></p>
         </label>

@@ -9,8 +9,8 @@ const HeroContent = () => {
         <div class="text-3xl md:text-5xl text-white font-bold py-8">
           Barberzy z klasą
         </div>
-        <div>
-          <ButtonGS></ButtonGS>
+        <div >
+          <ButtonGS ></ButtonGS>
         </div>
       </div>
     </div>

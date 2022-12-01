@@ -1,6 +1,6 @@
 const HeroSummit = () => {
   return (
-    <div class="grid grid-cols-3 gap-8 h-3/6 ml-16 text-white md:content-center">
+    <div class="grid grid-cols-3 gap-6 h-3/6 text-white md:content-center lg: ml-16">
       <div class="card sm:">
         <h2 class="card-title">
           <span>

@@ -1,11 +1,13 @@
 const About = () => {
   return (
-    <div className="bg-main-dark md:h-max pt-8 px-10 ">
+    <div className="bg-main-dark md:h-max pt-8 px-10 " id="About">
       <div className="flex flex-row m-8">
         <hr className="border-main-red w-16 mx-4 my-4"></hr>
         <p className="text-white text-4xl"> About </p>
       </div>
-      <p className="text-main-red sm:text-center  md:text-left text-sm uppercase mx-4 my-2 ">few words about us</p>
+      <p className="text-main-red sm:text-center  md:text-left text-sm uppercase mx-4 my-2 ">
+        few words about us
+      </p>
       <div className="grid h-2/3 grid-cols-1 md:grid-cols-2 gap-6">
         <div className="About__hero_png h-96 md:h-auto">
           <p className="invisible sm:visible text-white text-3xl align-bottom ">
