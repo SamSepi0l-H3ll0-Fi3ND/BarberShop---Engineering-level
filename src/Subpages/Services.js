@@ -8,7 +8,7 @@ const Services = () => {
       <p className="text-main-red text-sm uppercase mx-4 my-2">And many more</p>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 ">
         <div class="Service__card-one-bg w-full bg-nav h-36 lg:h-72 object-cover border-b-4 border-main-red">
-          <p className="invisible sm:visibletext-white text-3xl bottom-0">
+          <p className="invisible sm:visible text-white text-3xl bottom-0">
             Shaving
           </p>
         </div>

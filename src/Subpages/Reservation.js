@@ -7,7 +7,7 @@ const Reservation = () => {
       <div className="text-center text-white">
         <p className="text-5xl"> Make reservation now!</p>
         <a class="btn btn-wide btn-ghost border-solid border-main-red rounded-none border-2 mt-8">
-          Make ana appointment
+          Make an appointment
         </a>
       </div>
     </div>
