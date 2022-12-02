@@ -9,20 +9,29 @@ const About = () => {
         few words about us
       </p>
       <div className="grid h-2/3 grid-cols-1 md:grid-cols-2 gap-6">
-        <div className="About__hero_png h-96 md:h-auto">
-          <p className="invisible sm:visible text-white text-3xl align-bottom ">
-            Shaving
+        <div className="About__hero_png h-96 relative md:h-auto">
+          <p className="absolute inset-x-5 bottom-12 invisible sm:visible text-white text-5xl">
+            Paul Smith
+          </p>
+          <p className="absolute inset-x-5 bottom-4 invisible sm:visible text-white text-xl ">
+            Creativity and self confidence
           </p>
         </div>
         <div className="grid h-full  grid-rows-2 gap-6">
-          <div className="About__philosophy_png h-64 ">
-            <p className="invisible sm:visible text-white text-3xl align-bottom ">
-              Shaving
+          <div className="About__philosophy_png h-80 relative">
+            <p className="absolute inset-x-5 bottom-10 invisible sm:visible text-white text-5xl">
+              Philosophy
+            </p>
+            <p className="absolute inset-x-5 bottom-2 invisible sm:visible text-white text-2xl ">
+              Trust pays Off
             </p>
           </div>
-          <div className="About__office_png ">
-            <p className="invisible sm:visible text-white text-3xl align-bottom ">
-              Shaving
+          <div className="About__office_png relative">
+            <p className="absolute inset-x-5 bottom-10 invisible sm:visible text-white text-5xl ">
+              Office
+            </p>
+            <p className="absolute inset-x-5 bottom-2 invisible sm:visible text-white text-2xl ">
+              Somewhere on earth
             </p>
           </div>
         </div>

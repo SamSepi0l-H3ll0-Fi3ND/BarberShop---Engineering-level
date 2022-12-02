@@ -7,49 +7,49 @@ const Services = () => {
       </div>
       <p className="text-main-red text-sm uppercase mx-4 my-2">And many more</p>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 ">
-        <div class="Service__card-one-bg w-full bg-nav h-36 lg:h-72 object-cover border-b-4 border-main-red">
-          <p className="invisible sm:visible text-white text-3xl bottom-0">
+        <div class="Service__card-one-bg w-full relative bg-nav h-36 lg:h-72 object-cover border-b-4 border-main-red">
+          <p className="absolute inset-x-5 bottom-2 invisible sm:visible text-white text-3xl ">
+            Beard trim
+          </p>
+        </div>
+        <div class="Service__card-two-bg w-full relative bg-nav h-36 lg:h-72 object-cover border-b-4 border-main-red">
+          <p className="absolute inset-x-5 bottom-2 invisible sm:visible text-white text-3xl ">
+            Razor combo
+          </p>
+        </div>
+        <div class="Service__card-three-bg w-full relative bg-nav h-36 lg:h-72 object-cover border-b-4 border-main-red">
+          <p className="absolute inset-x-5 bottom-2 invisible sm:visible text-white text-3xl ">
+            Cover beard & facial hair
+          </p>
+        </div>
+        <div class="Service__card-four-bg w-full relative bg-nav h-36 lg:h-72 object-cover  border-b-4 border-main-red">
+          <p className="absolute inset-x-5 bottom-2 invisible sm:visible text-main-dark text-3xl ">
+            Premium Servis
+          </p>
+        </div>
+        <div class="Service__card-five-bg w-full relative bg-nav h-36 lg:h-72 object-cover border-b-4 border-main-red">
+          <p className="absolute inset-x-5 bottom-2 invisible sm:visible text-white text-3xl ">
+            Dyeing of hairs
+          </p>
+        </div>
+        <div class="Service__card-six-bg w-full relative bg-nav h-36 lg:h-72 object-cover  border-b-4 border-main-red">
+          <p className="absolute inset-x-5 bottom-2 invisible sm:visible text-white text-3xl ">
             Shaving
           </p>
         </div>
-        <div class="Service__card-two-bg w-full bg-nav h-36 lg:h-72 object-cover border-b-4 border-main-red">
-          <p className="invisible sm:visible text-white text-3xl bottom-0 ">
-            Shaving
+        <div class="Service__card-seven-bg w-full relative bg-nav h-36 lg:h-72 object-cover  border-b-4 border-main-red">
+          <p className="absolute inset-x-5 bottom-2 invisible sm:visible text-white text-3xl ">
+            Modeling hairstyle
           </p>
         </div>
-        <div class="Service__card-three-bg w-full bg-nav h-36 lg:h-72 object-cover border-b-4 border-main-red">
-          <p className="invisible sm:visible  text-white text-3xl bottom-0">
-            Shaving
+        <div class="Service__card-eight-bg w-full relative bg-nav h-36 lg:h-72 object-cover  border-b-4 border-main-red">
+          <p className="absolute inset-x-5 bottom-2 invisible sm:visible text-white text-3xl ">
+            Beard SPA
           </p>
         </div>
-        <div class="Service__card-four-bg w-full bg-nav h-36 lg:h-72 object-cover  border-b-4 border-main-red">
-          <p className="invisible sm:visible text-white text-3xl bottom-0">
-            Shaving
-          </p>
-        </div>
-        <div class="Service__card-five-bg w-full bg-nav h-36 lg:h-72 object-cover border-b-4 border-main-red">
-          <p className="invisible sm:visible text-white text-3xl bottom-0">
-            Shaving
-          </p>
-        </div>
-        <div class="Service__card-six-bg w-full bg-nav h-36 lg:h-72 object-cover  border-b-4 border-main-red">
-          <p className="invisible sm:visible text-white text-3xl bottom-0">
-            Shaving
-          </p>
-        </div>
-        <div class="Service__card-seven-bg w-full bg-nav h-36 lg:h-72 object-cover  border-b-4 border-main-red">
-          <p className="invisible sm:visible text-white text-3xl bottom-0">
-            Shaving
-          </p>
-        </div>
-        <div class="Service__card-eight-bg w-full bg-nav h-36 lg:h-72 object-cover  border-b-4 border-main-red">
-          <p className="invisible sm:visible text-white text-3xl bottom-0">
-            Shaving
-          </p>
-        </div>
-        <div class="Service__card-nine-bg w-full bg-nav h-36 lg:h-72 object-cover border-b-4 border-main-red">
-          <p className="invisible sm:visible text-white text-3xl bottom-0">
-            Shaving
+        <div class="Service__card-nine-bg w-full relative bg-nav h-36 lg:h-72 object-cover border-b-4 border-main-red">
+          <p className="absolute inset-x-5 bottom-2 invisible sm:visible text-white text-3xl ">
+            Shaver haircut
           </p>
         </div>
       </div>
