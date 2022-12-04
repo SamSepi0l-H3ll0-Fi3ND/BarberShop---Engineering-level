@@ -2,7 +2,7 @@ const Footer = () => {
   return (
     <div>
       <footer class="footer p-10 bg-main-dark text-white">
-        <div onClick={() => window.scrollTo(0, 0)} className="cursor-pointer" >
+        <div onClick={() => window.scrollTo(0, 0)} className="cursor-pointer">
           <div className="Logo text-3xl font-bold">
             <span> Ba</span>
             <span className="text-white underline decoration-1 decoration-main-red underline-offset-8">
@@ -37,7 +37,7 @@ const Footer = () => {
       </footer>
       <footer class="footer px-10 py-4 border-t bg-main-dark text-base-content border-main-red">
         <div class="items-center grid-flow-col text-main-red text-xl">
-          <p>2022 Jakub Figzal</p>
+          <p>2022 Jakub Figzal &copy;</p>
         </div>
         <div class="md:place-self-center md:justify-self-end">
           <div class="grid grid-flow-col gap-4">
