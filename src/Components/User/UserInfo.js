@@ -1,4 +1,4 @@
-import Logo from "../Components/Logo";
+import Logo from "../Logo";
 const UserInfo = () => {
   const user = {
     firstName: "Jakub",
@@ -10,12 +10,6 @@ const UserInfo = () => {
     <>
       <>
         <div class="card w-1/2 bg-main-dark rounded-yes shadow-xl lg:">
-          <div className="flex justify-between">
-            <div className="text-start mt-1 ml-1">
-              <Logo></Logo>
-            </div>
-            <div className="text-end pt-4 pr-6"></div>
-          </div>
           <div class="flex flex-col  space-y-4 card-body">
             <h2 class="text-white text-center text-3xl underline  decoration-main-red underline-offset-8">
               Cześć {user.firstName}!

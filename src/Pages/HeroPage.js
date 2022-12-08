@@ -5,7 +5,7 @@ import About from "../Subpages/About";
 import Rewiews from "../Subpages/Rewiews";
 import Reservation from "../Subpages/Reservation";
 import Footer from "../Components/Footer";
-import UserInfo from "./UserInfo";
+
 
 const HeroPage = () => {
   return (
@@ -17,7 +17,6 @@ const HeroPage = () => {
       <Rewiews></Rewiews>
       <Reservation></Reservation>
       <Footer></Footer>
-      <UserInfo></UserInfo>
     </div>
   );
 };

@@ -1,5 +1,5 @@
 import ButtonAppointment from "../Components/ButtonAppointment";
-import UserInfo from "../Pages/UserInfo";
+
 
 const Reservation = () => {
   return (
