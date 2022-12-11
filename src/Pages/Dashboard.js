@@ -1,19 +1,22 @@
-import DashboardFotter from "../Components/DashboardFotter";
 import Sidebar from "../Components/Sidebar";
 import UserInfo from "../Components/User/UserInfo";
 import EditUserInfo from "../Components/User/EditUserInfo";
 import History from "../Components/User/History";
 import Favourite from "../Components/User/Favourite";
 import DashboardInfo from "../Components/DashboardInfo";
+import Appointment from "../Components/Appointment";
+import DashboardNavbar from "../Components/DashboardNavbar";
+import ServicesList from "../Components/User/ServicesList";
 
 const Dashboard = () => {
   return (
-    <div className="flex flex-wrap w-screen">
-      <Sidebar></Sidebar>
-
-      <Favourite></Favourite>
-      <DashboardInfo></DashboardInfo>
-      <History></History>
+    <div className="flex flex-wrap h-screen w-full">
+      <DashboardNavbar></DashboardNavbar>
+      <div className="flex flex-nowrap w-full">
+        <Sidebar></Sidebar>
+        <ServicesList></ServicesList>
+        <DashboardInfo></DashboardInfo>
+      </div>
     </div>
   );
 };

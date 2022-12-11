@@ -2,11 +2,11 @@ import SmartphoneIcon from "@mui/icons-material/Smartphone";
 import { red } from "@mui/material/colors";
 const DashboardInfo = () => {
   return (
-    <div class="card w-96 bg-main-dark text-neutral-content">
+    <div class="card w-1/4 bg-main-dark text-neutral-content rounded-none border-l border-main-red border-b-0 border-t-0 border-r-0 border">
       <div class="card-body items-center text-white">
         <h2 class="card-title">Our place!</h2>
         <p>You can findu us here! </p>
-        <div className="h-full w-full b">
+        <div className="h-full w-full">
           <div class="mapouter">
             <div class="gmap_canvas">
               <iframe
@@ -28,7 +28,6 @@ const DashboardInfo = () => {
                 ></SmartphoneIcon>
                 <span> 578 424 534</span>
               </div>
-
               <a href="tel: 578 424 534">
                 <button className="btn btn-otline  ">Call</button>
               </a>

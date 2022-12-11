@@ -7,7 +7,7 @@ const EditUserInfo = () => {
     email: "kubafigzal@gmail.com",
   };
   return (
-    <div class="card bg-main-dark w-1/2 rounded-none shadow-xl">
+    <div class="card bg-main-dark w-9/12 rounded-none shadow-xl">
       <div class="flex flex-col  space-y-4 card-body">
         <h2 class="text-white text-center text-3xl underline decoration-2 underline-offset-8 decoration-main-red">
           Cześć {user.firstName}!
@@ -71,6 +71,7 @@ const EditUserInfo = () => {
             Zapisz zmiany
           </button>
         </div>
+        <hr className="border-main-red " />
       </div>
     </div>
   );

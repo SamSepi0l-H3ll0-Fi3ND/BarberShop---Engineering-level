@@ -10,29 +10,16 @@ import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 const Sidebar = () => {
   return (
     // <div className="flex justify-start gap-4 flex-row w-full bg-main-dark h-20 border-main-red border-b-2 border-l-0 border-t-0 rounded-r-lg">
-    <div className="flex flex-col ">
-      <div className="flex justify-start gap-4 flex-row w-screen bg-main-dark h-20 border-main-red border-b-2 border-l-0 border-t-0 rounded-r-lg">
-        <div className="ml-28 mt-4">
-          <Logo
-            fontSize="large"
-            className="self-center"
-            sx={{ color: red[800] }}
-          ></Logo>
-        </div>
-        <div className="self-center hidden md:flex">
-          <p>Coś tam</p>
-        </div>
-      </div>
-      <div className="flex flex-col z-10 bg-main-dark border-2 -mt-20  justify-between gap-6 border-main-red border-b-0 border-l-0 border-t-0 rounded-r-lg h-screen w-24 hidden sm:flex  ">
+      <div className="flex flex-col z-10 bg-main-dark border-2 -mt-20  justify-between gap-6 border-main-red border-b-0 border-l-0 border-t-0 rounded-r-lg h-screen w-20 hidden sm:flex  ">
         <ContentCutIcon
           fontSize="large"
           sx={{ color: red[800] }}
-          className="self-center mt-6 cursor-pointer"
+          className="self-center mt-6 cursor-pointer "
         ></ContentCutIcon>
         <div className="flex flex-col -mt-72 gap-6">
           <ListIcon
             fontSize="large"
-            className="self-center cursor-pointer"
+            className="self-center cursor-pointer "
             sx={{ color: red[800] }}
           ></ListIcon>
           <HistoryIcon
@@ -64,7 +51,7 @@ const Sidebar = () => {
           ></LogoutIcon>
         </div>
       </div>
-    </div>
+
   );
 };
 
