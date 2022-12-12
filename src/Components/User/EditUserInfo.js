@@ -25,7 +25,7 @@ const EditUserInfo = () => {
               <input
                 type="text"
                 placeholder="Type here"
-                class="input input-bordered border-main-red w-full input-info max-w-xs"
+                className="input input-bordered border-main-red w-full input-info max-w-xs"
               />
             </p>
           </div>
@@ -35,7 +35,7 @@ const EditUserInfo = () => {
               <input
                 type="text"
                 placeholder="Type here"
-                class="input input-bordered border-main-red w-full input-info max-w-xs"
+                className="input input-bordered border-main-red w-full input-info max-w-xs"
               />{" "}
             </p>
           </div>
@@ -45,7 +45,7 @@ const EditUserInfo = () => {
               <input
                 type="text"
                 placeholder="Type here"
-                class="input input-bordered border-main-red w-full input-info max-w-xs"
+                className="input input-bordered border-main-red w-full input-info max-w-xs"
               />
             </p>
           </div>
@@ -55,7 +55,7 @@ const EditUserInfo = () => {
               <input
                 type="text"
                 placeholder="Type here"
-                class="input input-bordered border-main-red input-info w-full max-w-xs"
+                className="input input-bordered border-main-red input-info w-full max-w-xs"
               />{" "}
             </p>
           </div>

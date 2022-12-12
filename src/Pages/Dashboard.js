@@ -7,6 +7,7 @@ import DashboardInfo from "../Components/DashboardInfo";
 import Appointment from "../Components/Appointment";
 import DashboardNavbar from "../Components/DashboardNavbar";
 import ServicesList from "../Components/User/ServicesList";
+import { Outlet } from "react-router-dom";
 
 const Dashboard = () => {
   return (
@@ -14,7 +15,7 @@ const Dashboard = () => {
       <DashboardNavbar></DashboardNavbar>
       <div className="flex flex-nowrap w-full">
         <Sidebar></Sidebar>
-        <ServicesList></ServicesList>
+        <Outlet />
         <DashboardInfo></DashboardInfo>
       </div>
     </div>

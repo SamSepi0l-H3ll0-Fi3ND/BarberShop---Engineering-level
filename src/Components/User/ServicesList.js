@@ -9,9 +9,7 @@ const ServicesList = () => {
         <p className="text-xl mt-2 mb-4"> What you need? We have it!</p>
        <Service></Service>
        <Service></Service>
-       <Service></Service>
-       <Service></Service>
-       
+      
       </div>
     </div>
   );
