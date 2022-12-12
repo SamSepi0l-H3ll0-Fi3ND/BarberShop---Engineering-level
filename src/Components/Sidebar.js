@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 const Sidebar = () => {
   return (
     // <div className="flex justify-start gap-4 flex-row w-full bg-main-dark h-20 border-main-red border-b-2 border-l-0 border-t-0 rounded-r-lg">
-    <div className="flex flex-col z-10 bg-main-dark border-2 -mt-20  justify-between gap-6 border-main-red border-b-0 border-l-0 border-t-0 rounded-r-lg h-screen w-20 hidden sm:flex  ">
+    <div className="flex flex-col z-10 bg-main-dark border-2 -mt-20 h-full justify-between gap-6 border-main-red border-b-0 border-l-0 border-t-0 rounded-r-lg h-screen w-20 hidden sm:flex  ">
       <ContentCutIcon
         fontSize="large"
         sx={{ color: red[800] }}
