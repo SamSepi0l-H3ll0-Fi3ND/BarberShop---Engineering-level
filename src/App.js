@@ -10,6 +10,7 @@ import History from "./Components/User/History";
 import UserInfo from "./Components/User/UserInfo";
 import ServicesList from "./Components/User/ServicesList";
 import EditUserInfo from "./Components/User/EditUserInfo";
+import NotFound404 from "./Pages/NotFound404";
 function App() {
   const byleco = true;
   return (
@@ -25,7 +26,7 @@ function App() {
           <Route path="favourite" element={<Favourite />} />
           <Route path="history" element={<History />} />
         </Route>
-        <Route path="*" element={<div>Not found</div>} />
+        <Route path="*" element={<NotFound404 />} />
       </Routes>
     </Router>
   );

@@ -8,7 +8,7 @@ const EditUserInfo = () => {
   };
   return (
     <div class="card bg-main-dark w-9/12 rounded-none shadow-xl">
-      <div class="flex flex-col  space-y-4 card-body">
+      <div class="flex flex-col space-y-4 card-body">
         <h2 class="text-white text-center text-3xl underline decoration-2 underline-offset-8 decoration-main-red">
           Cześć {user.firstName}!
         </h2>
@@ -72,6 +72,9 @@ const EditUserInfo = () => {
           </button>
         </div>
         <hr className="border-main-red " />
+      </div>
+      <div className="EditUserInfo w-full h-full mb-2 ">
+
       </div>
     </div>
   );

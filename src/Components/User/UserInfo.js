@@ -9,7 +9,7 @@ const UserInfo = () => {
   return (
     <>
       <>
-        <div class="card w-9/12 bg-main-dark rounded-none shadow-xl lg:">
+        <div class="card w-9/12 bg-main-dark rounded-none lg:">
           <div class="flex flex-col space-y-4 card-body">
             <h2 class="text-white text-center text-3xl underline  decoration-main-red underline-offset-8">
               Cześć {user.firstName}!
@@ -49,6 +49,7 @@ const UserInfo = () => {
                 Dashboard
               </button>
             </div>
+            <div className="UserInfo w-full h-full"></div>
           </div>
         </div>
       </>

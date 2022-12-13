@@ -97,3 +97,22 @@ html {
   background-size: cover;
   
 }
+.NotFound{
+  background-image: url(./Photos/vincent-van-zalinge-4B5F388MLE4-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.UserInfo{
+  background-image: url(./Photos/ashton-bingham-EQFtEzJGERg-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.EditUserInfo{
+  background-image: url(./Photos/hannah-busing-vGHMXnD5A0I-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* ja chciałbym się zapytać czy mają państwo jeszcze wolny jakiś stolik na niedzielę */
+}
