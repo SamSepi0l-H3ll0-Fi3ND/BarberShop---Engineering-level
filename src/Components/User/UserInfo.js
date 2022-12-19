@@ -1,4 +1,4 @@
-import Logo from "../Logo";
+
 const UserInfo = () => {
   const user = {
     firstName: "Jakub",
@@ -15,7 +15,7 @@ const UserInfo = () => {
               Cześć {user.firstName}!
             </h2>
             <div className=" text-center text-main-red">
-              Informacje o Tobie:
+              These are some information about you:
             </div>
             <div className=" text-center text-white px-2">
               {" "}

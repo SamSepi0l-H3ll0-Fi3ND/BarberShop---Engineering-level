@@ -1,4 +1,4 @@
-import Logo from "../Logo";
+
 const EditUserInfo = () => {
   const user = {
     firstName: "Jakub",
@@ -40,11 +40,12 @@ const EditUserInfo = () => {
             </p>
           </div>
           <div className="flex flex-col space-y-2">
-            <p>Zmień nick</p>
+            <p>Phone number</p>
             <p className="text-white text-2xl">
               <input
-                type="text"
+                type="tel"
                 placeholder="Type here"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
                 className="input input-bordered border-main-red w-full input-info max-w-xs"
               />
             </p>

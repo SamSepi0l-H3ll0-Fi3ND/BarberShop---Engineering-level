@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 const Service = () => {
   const reservation = {
     typeofReservation: "Beard SPA",
@@ -12,7 +13,7 @@ const Service = () => {
           <span class="text-white font-bold ">
             {reservation.typeofReservation}
           </span>
-          <span>{reservation.descOfReservation}</span>
+          <p className="truncate w-60 ...">{reservation.descOfReservation} </p>
           <span>
             <label for="my-modal-4" class="btn btn-sm">
               ...
@@ -37,7 +38,34 @@ const Service = () => {
         </div>
         <div className="flex items-center justify-end w-full">
           <span className="mr-4 text-white"> {reservation.price} </span>
-          <button className="btn btn-outline text-white">Arrange</button>
+          <span>
+            <label for="my-modal-3" class="btn btn-outline text-white">
+              Arrange
+            </label>
+            <input type="checkbox" id="my-modal-3" class="modal-toggle" />
+            <label for="my-modal-3" class="modal cursor-pointer">
+              <label class="modal-box relative bg-main-dark card card-side" for="">
+                <div className="card-body">
+                  <p className="card-title text-2xl text-white">Arrange </p>
+                  <p className="text-xl mt-2"> Make your arrange now!</p>
+
+                  <h3 class="text-lg font-bold text-white mt-8">
+                    {reservation.typeofReservation}
+                  </h3>
+                  <div className="flex flex-nowrap ">
+                    <p class="">{reservation.descOfReservation}</p>
+                    <span className="text-white"> {reservation.price} </span>
+                  </div>
+                  <input type="datetime-local" className="rounded-md mt-2 mb-2"/>
+                  <div className="card-actions justify-end">
+                    <button className="btn btn-success w-full">
+                      Make arrange
+                    </button>
+                  </div>
+                </div>
+              </label>
+            </label>
+          </span>
         </div>
       </div>
     </div>
