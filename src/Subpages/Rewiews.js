@@ -170,6 +170,7 @@ const Rewiews = () => {
             </div>
           </div>
         </div>
+
         <div className="flex justify-center mt-36">
           <div className=" border-2 border-l-main-red h-24 border-r-transparent border-t-transparent border-b-transparent rounded-full mb-16"></div>
         </div>

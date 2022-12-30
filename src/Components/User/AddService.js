@@ -1,6 +1,6 @@
 const AddService = () => {
   return (
-    <div className="card p-4 w-9/12 bg-main-dark rounded-none">
+    <div className="card p-4 w-full bg-main-dark rounded-none md:w-9/12">
       <div class="flex flex-col space-y-4 card-body">
         <h2 class=" text-white text-center text-3xl underline  decoration-main-red underline-offset-8">
           Hi Owner!
@@ -22,7 +22,7 @@ const AddService = () => {
             rows="8"
             cols="100"
             placeholder="Description"
-            className="rounded-md caret-transparent bg-[#2A303C] border-2 border-main-red resize-none text-left  w-1/2 "
+            className="rounded-md caret-transparent bg-[#2A303C] border-2 border-main-red resize-none text-left w-11/12 md:w-1/2"
           />{" "}
           <hr className="border-main-red w-4/5" />
           <p className="text-2xl"> Pirce:</p>

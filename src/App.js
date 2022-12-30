@@ -28,7 +28,6 @@ function App() {
           <Route path="favourite" element={<Favourite />} />
           <Route path="history" element={<History />} />
           <Route path="addservice" element={<AddService />} />
-         
         </Route>
         <Route path="*" element={<NotFound404 />} />
       </Routes>

@@ -7,7 +7,7 @@ const EditUserInfo = () => {
     email: "kubafigzal@gmail.com",
   };
   return (
-    <div class="card bg-main-dark w-9/12 rounded-none shadow-xl">
+    <div class="card bg-main-dark w-full rounded-none shadow-xl md:w-9/12">
       <div class="flex flex-col space-y-4 card-body">
         <h2 class="text-white text-center text-3xl underline decoration-2 underline-offset-8 decoration-main-red">
           Cześć {user.firstName}!
@@ -18,7 +18,7 @@ const EditUserInfo = () => {
         <div>
           <hr className="border-main-red" />
         </div>
-        <div className="grid grid-cols-2 gap-4 text-center">
+        <div className="grid grid-cols-2 gap-4 text-center ">
           <div className="flex flex-col space-y-2">
             <p>Zmień imie</p>
             <p className="text-white text-2xl">
@@ -60,11 +60,11 @@ const EditUserInfo = () => {
               />{" "}
             </p>
           </div>
-          <div className="col-span-2 flex flex-col space-y-2 w-1/2">
+          <div className="col-span-2 flex flex-col space-y-2 w-1/2 ">
             <div className="justify-center border-2 border-l-main-dark border-r-main-red h-24 border-r-transparent border-t-transparent border-b-transparent rounded-none mb-8"></div>
           </div>
         </div>
-        <div class=" grid grid-cols-2 gap-4">
+        <div class=" grid grid-cols-1 gap-4 sm:grid-cols-2">
           <button class="btn bg-outline border-main-red text-dark-blue  border-2">
             Przejdź do profilu
           </button>

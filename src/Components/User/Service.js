@@ -13,7 +13,7 @@ const Service = () => {
           <span class="text-white font-bold ">
             {reservation.typeofReservation}
           </span>
-          <p className="truncate w-60 ...">{reservation.descOfReservation} </p>
+          <p className="truncate w-full ... 2xl:text-clip">{reservation.descOfReservation} </p>
           <span>
             <label for="my-modal-4" class="btn btn-sm">
               ...
@@ -37,7 +37,7 @@ const Service = () => {
           </span>
         </div>
         <div className="flex items-center justify-end w-full">
-          <span className="mr-4 text-white"> {reservation.price} </span>
+          <span className="mr-4 text-white hidden md:inline-flex"> {reservation.price} </span>
           <span>
             <label for="my-modal-3" class="btn btn-outline text-white">
               Arrange

@@ -2,7 +2,7 @@ import SmartphoneIcon from "@mui/icons-material/Smartphone";
 import { red } from "@mui/material/colors";
 const DashboardInfo = () => {
   return (
-    <div class="card w-1/4 bg-main-dark text-neutral-content rounded-none border-l border-main-red border-b-0 border-t-0 border-r-0 border">
+    <div class="card w-1/4 bg-main-dark  text-neutral-content rounded-none border-l border-main-red border-b-0 border-t-0 border-r-0 border hidden md:inline-flex">
       <div class="card-body items-center text-white">
         <h2 class="card-title">Our place!</h2>
         <p>You can findu us here! </p>
@@ -20,39 +20,53 @@ const DashboardInfo = () => {
             </div>
             <p className="mt-4">Contact and open hours: </p>
             <hr className="border-main-red w-full" />
-            <div className="flex my-2 justify-between ">
+            <div className="flex items-center flex-wrap my-2 md:flex flex-nowrap justify-between  ">
               <div>
                 <SmartphoneIcon
                   fontSize="large"
                   sx={{ color: red[800] }}
                 ></SmartphoneIcon>
-                <span> 578 424 534</span>
+                <span className="hidden lg:inline-flex"> 578 424 534</span>
               </div>
               <a href="tel: 578 424 534">
-                <button className="btn btn-otline  ">Call</button>
+                <button className=" btn btn-otline  ">Call</button>
               </a>
             </div>
             <hr className="border-main-red w-full" />
-            <div className="grid grid-cols-2 my-6 gap-2">
-              <span>Monday </span>
+            <div className="grid my-6 gap-2 md:grid-cols-1 lg:grid-cols-2">
+              <span className=" underline underline-offset-4 decoration-main-red lg:decoration-main-dark">
+                Monday{" "}
+              </span>
               <span>8:00- 19:00</span>
-              <span>Teusday </span>
+              <span className=" underline underline-offset-4 decoration-main-red lg:decoration-main-dark">
+                Teusday{" "}
+              </span>
               <span>8:00- 19:00</span>
-              <span>Wednesday </span>
+              <span className=" underline underline-offset-4 decoration-main-red lg:decoration-main-dark">
+                Wednesday{" "}
+              </span>
               <span>8:00- 19:00</span>
-              <span>Thursday </span>
+              <span className=" underline underline-offset-4 decoration-main-red lg:decoration-main-dark">
+                Thursday{" "}
+              </span>
               <span>8:00- 19:00</span>
-              <span>Friday </span>
+              <span className=" underline underline-offset-4 decoration-main-red lg:decoration-main-dark">
+                Friday{" "}
+              </span>
               <span>8:00- 19:00</span>
-              <span>Saturday </span>
+              <span className=" underline underline-offset-4 decoration-main-red lg:decoration-main-dark">
+                Saturday{" "}
+              </span>
               <span>8:00- 19:00</span>
-              <span>Sunday </span>
+              <span className=" underline underline-offset-4 decoration-main-red lg:decoration-main-dark">
+                Sunday{" "}
+              </span>
               <span>Closed</span>
             </div>
           </div>
         </div>
-        <span className="text-center mb-3">Socialmedia</span>
-        <div class="grid grid-flow-col gap-4">
+        <span className="text-center ">Socialmedia</span>
+        <div class="grid grid-flow-col mb-20 gap-4">
           <a>
             <svg
               xmlns="http://www.w3.org/2000/svg"

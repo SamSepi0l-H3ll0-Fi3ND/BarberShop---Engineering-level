@@ -3,6 +3,9 @@ module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
     extend: {
+      height: {
+        128: "48rem",
+      },
       colors: {
         "main-red": "#CC1E1E",
         "second-red": "#171017",

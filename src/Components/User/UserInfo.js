@@ -9,7 +9,7 @@ const UserInfo = () => {
   return (
     <>
       <>
-        <div class="card w-9/12 bg-main-dark rounded-none lg:">
+        <div class="card w-full h-full bg-main-dark rounded-none md:w-9/12">
           <div class="flex flex-col space-y-4 card-body">
             <h2 class="text-white text-center text-3xl underline  decoration-main-red underline-offset-8">
               Cześć {user.firstName}!

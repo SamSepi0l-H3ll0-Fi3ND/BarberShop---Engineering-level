@@ -11,13 +11,13 @@ import { Link } from "react-router-dom";
 const admin = true;
 const Sidebar = () => {
   return (
-    <div className="flex flex-col z-10 bg-main-dark border-2 -mt-20 h-full justify-between gap-6 border-main-red border-b-0 border-l-0 border-t-0 rounded-r-lg h-screen w-20 hidden sm:flex  ">
+    <div className="flex flex-col z-10 bg-main-dark border-2 -mt-24 justify-between gap-6 border-main-red border-b-0 border-l-0 border-t-0 rounded-r-lg  w-20 hidden sm:flex  ">
       <ContentCutIcon
         fontSize="large"
         sx={{ color: red[800] }}
         className="self-center mt-6 cursor-pointer "
       ></ContentCutIcon>
-      <div className="flex flex-col ml-4 -mt-72 gap-6">
+      <div className="flex flex-col items-center  gap-6">
         <Link to="/dashboard/services">
           <ListIcon
             fontSize="large"
@@ -57,13 +57,13 @@ const Sidebar = () => {
           <Link to="/dashboard/addservice">
             <AddIcon
               fontSize="large"
-              className="self-center cursor-pointer"
+              className="self-center cursor-pointer mb-20"
               sx={{ color: red[800] }}
             ></AddIcon>
           </Link>
         )}
       </div>
-      <div className="text-lg text-center">
+      <div className="text-lg text-center mb-20">
         <LogoutIcon
           fontSize="large"
           className="self-center mb-6 cursor-pointer"
@@ -75,5 +75,3 @@ const Sidebar = () => {
 };
 
 export default Sidebar;
-
-

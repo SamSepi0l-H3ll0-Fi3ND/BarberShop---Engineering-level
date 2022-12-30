@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 
 const Register = () => {
   return (
-    <div className="h-screen bg-main-dark grid grid-none md:grid-cols-2">
-      <div className="bg-[url(./Photos/Register.jpg)] invisible md:visible bg-center bg-cover order-last relative md:order-none h-full">
+    <div className="min-h-screen bg-main-dark grid grid-none md:grid-cols-2">
+      <div className="bg-[url(./Photos/Register.jpg)] invisible md:visible bg-center bg-cover order-last relative md:order-none min-h-full">
         <div className="ml-8 absolute inset-x-0 bottom-10">
           <p className="text-white text-2xl">
             Turn your ideas <br></br> into reality

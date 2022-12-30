@@ -14,7 +14,7 @@ const Appointment = () => {
           <span class=" text-white font-bold ">
             {reservation.typeofReservation}
           </span>
-          <span className="">{reservation.descOfReservation}</span>
+          <span className="truncate w-full ... 2xl:text-clip">{reservation.descOfReservation}</span>
           <span>{reservation.date}</span>
         </div>
         <div className="flex items-center justify-end w-full">
