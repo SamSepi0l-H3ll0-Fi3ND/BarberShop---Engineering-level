@@ -1,13 +1,15 @@
+import { useNavigate } from "react-router-dom";
 import API from "../../env";
 const AddService = () => {
+  const navigate = useNavigate();
   async function AddServ(e) {
     e.preventDefault();
     const formdata = new FormData(e.target);
     try {
       const respone = await fetch(`${API}/services`, {
         method: "POST",
-        headers:{
-          "Content-Type": "application/json"
+        headers: {
+          "Content-Type": "application/json",
         },
         body: JSON.stringify({
           title: formdata.get("title").valueOf(),
@@ -15,6 +17,7 @@ const AddService = () => {
           price: formdata.get("price").valueOf(),
         }),
       });
+      navigate("/dashboard/services");
     } catch (error) {
       console.error(error);
     }
