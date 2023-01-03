@@ -12,6 +12,7 @@ import ServicesList from "./Components/User/ServicesList";
 import EditUserInfo from "./Components/User/EditUserInfo";
 import NotFound404 from "./Pages/NotFound404";
 import AddService from "./Components/User/AddService";
+import UserList from "./Components/User/UserList";
 
 function App() {
   const byleco = true;
@@ -28,6 +29,7 @@ function App() {
           <Route path="favourite" element={<Favourite />} />
           <Route path="history" element={<History />} />
           <Route path="addservice" element={<AddService />} />
+          <Route path="userlist" element={<UserList />} />
         </Route>
         <Route path="*" element={<NotFound404 />} />
       </Routes>

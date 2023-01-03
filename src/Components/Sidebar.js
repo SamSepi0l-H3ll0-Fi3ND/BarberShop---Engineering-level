@@ -6,6 +6,7 @@ import EditIcon from "@mui/icons-material/Edit";
 import AddIcon from "@mui/icons-material/Add";
 import ListIcon from "@mui/icons-material/List";
 import HistoryIcon from "@mui/icons-material/History";
+import ContactsIcon from '@mui/icons-material/Contacts';
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import { Link } from "react-router-dom";
 const admin = true;
@@ -57,9 +58,18 @@ const Sidebar = () => {
           <Link to="/dashboard/addservice">
             <AddIcon
               fontSize="large"
-              className="self-center cursor-pointer mb-20"
+              className="self-center cursor-pointer "
               sx={{ color: red[800] }}
             ></AddIcon>
+          </Link>
+        )}
+        {admin && (
+          <Link to="/dashboard/userlist">
+            <ContactsIcon
+              fontSize="large"
+              className="self-center cursor-pointer mb-20"
+              sx={{ color: red[800] }}
+            ></ContactsIcon>
           </Link>
         )}
       </div>
