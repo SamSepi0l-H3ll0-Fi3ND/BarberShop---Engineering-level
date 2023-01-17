@@ -1,11 +1,26 @@
+import { useEffect, useState } from "react";
+import API from "../../env";
 
 const UserInfo = () => {
-  const user = {
-    firstName: "Jakub",
-    lastName: "Figzał",
-    telephone: "312 453 562",
-    email: "kubafigzal@gmail.com",
-  };
+  const [user, setUser] = useState([]);
+  try {
+    useEffect(() => {
+      const response = fetch(`${API}/users/:userId`, {
+        method: "GET",
+        headers: {
+          Authorization: "bearer " + localStorage.getItem("TOKEN"),
+          "Content-Type": "application/json",
+        },
+      })
+        .then((response) => response.json())
+        .then((data) => {
+          setUser(data);
+        });
+        
+    }, []);
+  } catch (error) {
+    console.error(error,error.message);
+  }
   return (
     <>
       <>
@@ -27,20 +42,20 @@ const UserInfo = () => {
             <div className="grid grid-cols-2 gap-4 text-center ">
               <div className="flex flex-col space-y-2 text-main-red border-12">
                 <p>Twoje imie</p>
-                <p className="text-white text-2xl "> {user.firstName} </p>
+                <p className="text-white text-2xl "> {} </p>
               </div>
               <div className="flex flex-col space-y-2 text-main-red">
                 <p>Twoje nazwisko</p>
-                <p className="text-white text-2xl"> {user.lastName} </p>
+                <p className="text-white text-2xl"> {} </p>
               </div>
 
               <div className="col-span-2 flex flex-col space-y-2">
                 <div className="flex flex-col space-y-2 text-main-red">
                   <p>Twoj numer telefonu</p>
-                  <p className="text-white text-2xl"> {user.telephone} </p>
+                  <p className="text-white text-2xl"> {} </p>
 
                   <p>Twoj address</p>
-                  <p className="text-white text-2xl"> {user.email} </p>
+                  <p className="text-white text-2xl"> {} </p>
                 </div>
               </div>
             </div>

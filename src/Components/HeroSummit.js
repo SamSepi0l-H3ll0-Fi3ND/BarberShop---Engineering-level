@@ -5,42 +5,41 @@ const HeroSummit = () => {
         <h2 class="card-title">
           <span>
             <span className="underline decoration-main-red underline-offset-8 ">
-              Stylow
+              Stylishl
             </span>
-            o
+            y
           </span>
         </h2>
         <p className="w-full lg:w-2/4 invisible sm:visible">
-          If a dog chews shoes whose shoes does he choose? If a dog chews shoes
-          whose shoes does he choose?
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Et nihil
+          distinctio delectes
         </p>
       </div>
       <div class="card">
         <h2 class="card-title">
           <span>
             <span className="underline decoration-main-red underline-offset-8 ">
-              Dokład
+              Precise
             </span>
-            nie
+            ly
           </span>
         </h2>
         <p className="w-full lg:w-2/4 invisible sm:visible">
-          If a dog chews shoes whose shoes does he choose? If a dog chews shoes
-          whose shoes does he choose?
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci,
+          facere.
         </p>
       </div>
       <div class="card">
         <h2 class="card-title">
           <span>
             <span className="underline decoration-main-red underline-offset-8 ">
-              Tak jak T
+              Just like yo
             </span>
-            y chcesz
+            u want
           </span>
         </h2>
         <p className="w-full lg:w-2/4 invisible sm:visible">
-          If a dog chews shoes whose shoes does he choose? If a dog chews shoes
-          whose shoes does he choose?
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio delectes et nihil.
         </p>
       </div>
     </div>

@@ -1,31 +1,79 @@
+
+import { useNavigate } from "react-router-dom";
+import API from "../env";
+
 const RegisterForm = () => {
+  const navigate = useNavigate();
+  async function Register(e) {
+    e.preventDefault();
+    const formdata = new FormData(e.target);
+    try {
+      const response = await fetch(`${API}/auth/register`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          firstName: formdata.get("firstName").valueOf(),
+          lastName: formdata.get("lastName").valueOf(),
+          email: formdata.get("email").valueOf(),
+          number: formdata.get("number").valueOf(),
+          password: formdata.get("password").valueOf(),
+        }),
+      });
+      navigate("/login");
+    } catch (error) {
+      console.error(error);
+    }
+  }
   return (
-    <div class="form-control space-y-4">
-      <label class="input-group input-group-vertical">
-        <span>Name</span>
-        <input type="text" class="input input- border-main-red" />
-      </label>
-      <label class="input-group input-group-vertical">
-        <span>Surname</span>
-        <input type="text" class="input input- border-main-red" />
-      </label>
-      <label class="input-group input-group-vertical">
-        <span>Email</span>
-        <input type="text" placeholder="yourmail@mail.com" class="input input- border-main-red" />
-      </label>
-      <label class="input-group input-group-vertical">
-        <span>Telephone</span>
-        <input type="number" placeholder="+48 532 432 123" class="input input- border-main-red" />
-      </label>
-      <label class="input-group input-group-vertical ">
-        <span>Password</span>
-        <input
-          type="password"
-          class="input input-group-vertical border-main-red"
-        />
-      </label>
-      <button class="btn btn-ghost border-main-red">Register</button>
-    </div>
+    <form onSubmit={Register}>
+      <div class="form-control space-y-4">
+        <label class="input-group input-group-vertical">
+          <span>Name</span>
+          <input
+            type="text"
+            name="firstName"
+            class="input input- border-main-red"
+          />
+        </label>
+        <label class="input-group input-group-vertical">
+          <span>Surname</span>
+          <input
+            type="text"
+            name="lastName"
+            class="input input- border-main-red"
+          />
+        </label>
+        <label class="input-group input-group-vertical">
+          <span>Email</span>
+          <input
+            type="text"
+            name="email"
+            placeholder="yourmail@mail.com"
+            class="input input- border-main-red"
+          />
+        </label>
+        <label class="input-group input-group-vertical">
+          <span>Telephone</span>
+          <input
+            type="number"
+            name="number"
+            placeholder="+48 532 432 123"
+            class="input input- border-main-red"
+          />
+        </label>
+        <label class="input-group input-group-vertical ">
+          <span>Password</span>
+          <input
+            type="password"
+            name="password"
+            class="input input-group-vertical border-main-red"
+          />
+        </label>
+        <button class="btn btn-ghost border-main-red">Register</button>
+      </div>
+    </form>
   );
 };
 
