@@ -5,7 +5,7 @@ const UserInfo = () => {
   const [user, setUser] = useState([]);
   try {
     useEffect(() => {
-      const response = fetch(`${API}/users/:userId`, {
+      const response = fetch(`${API}/users/userprofile`, {
         method: "GET",
         headers: {
           Authorization: "bearer " + localStorage.getItem("TOKEN"),
@@ -15,6 +15,7 @@ const UserInfo = () => {
         .then((response) => response.json())
         .then((data) => {
           setUser(data);
+          console.log(data);
         });
         
     }, []);

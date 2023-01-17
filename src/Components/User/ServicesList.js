@@ -18,9 +18,7 @@ const ServicesList = () => {
       console.log(error);
     }
   }, []);
-  function generateService() {
-    return;
-  }
+ 
   const services =data ? data.map((item) => 
     <Service key={item._id} data={item}/> 
   ): null;
