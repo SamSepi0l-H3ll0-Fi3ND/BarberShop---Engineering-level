@@ -1,11 +1,12 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Cookies from "universal-cookie";
+import UserContext from "../Context";
 import API from "../env";
 
 const LoginForm = () => {
   const navigate = useNavigate();
-  const [response, setResponse] = useState();
+  const { setUser } = useContext(UserContext);
   async function login(e) {
     e.preventDefault();
     const setCookies = new Cookies();
@@ -21,10 +22,11 @@ const LoginForm = () => {
           password: formData.get("password").valueOf(),
         }),
       });
-        const token = await response.text();
-        localStorage.setItem("TOKEN", token);
-        navigate("/dashboard");
-      
+
+      const { user, token } = await response.json();
+      setUser(user);
+      localStorage.setItem("TOKEN", token);
+      navigate("/dashboard");
     } catch (error) {
       console.error(error);
     }
