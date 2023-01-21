@@ -9,6 +9,7 @@ const AddService = () => {
       const respone = await fetch(`${API}/services`, {
         method: "POST",
         headers: {
+          Authorization: "Bearer " + localStorage.getItem("TOKEN"),
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
@@ -17,6 +18,7 @@ const AddService = () => {
           price: formdata.get("price").valueOf(),
         }),
       });
+
       navigate("/dashboard/services");
     } catch (error) {
       console.error(error);
@@ -61,9 +63,7 @@ const AddService = () => {
               className="input input-bordered border-main-red max-w-xs"
             />{" "}
             <div className="flex flex-wrap gap-4">
-              <button className="btn btn-outline text-white">
-                List of services
-              </button>
+              <a className="btn btn-outline text-white">List of services</a>
               <button class="btn btn-success text-main-dark border-2 border-success max-w-xs  justify-center">
                 Zapisz zmiany
               </button>{" "}

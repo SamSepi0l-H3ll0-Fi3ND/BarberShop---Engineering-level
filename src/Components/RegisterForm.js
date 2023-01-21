@@ -30,16 +30,20 @@ const RegisterForm = () => {
     <form onSubmit={Register}>
       <div class="form-control space-y-4">
         <label class="input-group input-group-vertical">
-          <span>Name</span>
+          <span>First name</span>
           <input
+            required
+            placeholder="Type your first name"
             type="text"
             name="firstName"
             class="input input- border-main-red"
           />
         </label>
         <label class="input-group input-group-vertical">
-          <span>Surname</span>
+          <span>Last Name</span>
           <input
+          required
+           placeholder="Type your last name"
             type="text"
             name="lastName"
             class="input input- border-main-red"
@@ -48,6 +52,7 @@ const RegisterForm = () => {
         <label class="input-group input-group-vertical">
           <span>Email</span>
           <input
+          required
             type="text"
             name="email"
             placeholder="yourmail@mail.com"
@@ -57,6 +62,7 @@ const RegisterForm = () => {
         <label class="input-group input-group-vertical">
           <span>Telephone</span>
           <input
+          required
             type="number"
             name="number"
             placeholder="+48 532 432 123"
@@ -66,6 +72,7 @@ const RegisterForm = () => {
         <label class="input-group input-group-vertical ">
           <span>Password</span>
           <input
+          required
             type="password"
             name="password"
             class="input input-group-vertical border-main-red"

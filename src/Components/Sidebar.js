@@ -9,8 +9,11 @@ import HistoryIcon from "@mui/icons-material/History";
 import ContactsIcon from "@mui/icons-material/Contacts";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import { Link } from "react-router-dom";
-const admin = true;
+import { useContext } from "react";
+import UserContext from "../Context";
+
 const Sidebar = () => {
+  const { user } = useContext(UserContext);
   return (
     <div className="flex flex-col z-10 bg-main-dark border-2 -mt-24 justify-between gap-6 border-main-red border-b-0 border-l-0 border-t-0 rounded-r-lg  w-20 hidden sm:flex  ">
       <ContentCutIcon
@@ -26,20 +29,24 @@ const Sidebar = () => {
             sx={{ color: red[800] }}
           ></ListIcon>
         </Link>
-        <Link to="/dashboard/history">
-          <HistoryIcon
-            fontSize="large"
-            className="self-center cursor-pointer"
-            sx={{ color: red[800] }}
-          ></HistoryIcon>
-        </Link>
-        <Link to="/dashboard/favourite">
-          <FavoriteBorderIcon
-            fontSize="large"
-            className="self-center cursor-pointer"
-            sx={{ color: red[800] }}
-          ></FavoriteBorderIcon>
-        </Link>
+        {user && !user.isAdmin && (
+          <Link to="/dashboard/history">
+            <HistoryIcon
+              fontSize="large"
+              className="self-center cursor-pointer"
+              sx={{ color: red[800] }}
+            ></HistoryIcon>
+          </Link>
+        )}
+        {user && !user.isAdmin && (
+          <Link to="/dashboard/favourite">
+            <FavoriteBorderIcon
+              fontSize="large"
+              className="self-center cursor-pointer"
+              sx={{ color: red[800] }}
+            ></FavoriteBorderIcon>
+          </Link>
+        )}
         <Link to="/dashboard/userinfo">
           <InfoIcon
             fontSize="large"
@@ -47,7 +54,8 @@ const Sidebar = () => {
             sx={{ color: red[800] }}
           ></InfoIcon>
         </Link>
-        {admin && (
+
+        {user && user.isAdmin && (
           <Link to="/dashboard/addservice">
             <AddIcon
               fontSize="large"
@@ -56,7 +64,7 @@ const Sidebar = () => {
             ></AddIcon>
           </Link>
         )}
-        {admin && (
+        {user && user.isAdmin && (
           <Link to="/dashboard/userlist">
             <ContactsIcon
               fontSize="large"

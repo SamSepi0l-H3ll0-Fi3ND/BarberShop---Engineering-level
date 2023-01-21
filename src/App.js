@@ -13,25 +13,38 @@ import EditUserInfo from "./Components/User/EditUserInfo";
 import NotFound404 from "./Pages/NotFound404";
 import AddService from "./Components/User/AddService";
 import UserList from "./Components/User/UserList";
+import MakeAppointment from "./Components/User/MakeAppointment";
+import { useContext } from "react";
+import UserContext from "./Context";
 
 function App() {
-  
-  const byleco = true;
+  const { user } = useContext(UserContext);
   return (
     <Router>
       <Routes>
         <Route path="" exact element={<HeroPage />} />
         <Route path="login" element={<LogIn />} />
         <Route path="register" element={<Register />} />
-        <Route path="dashboard" element={<Dashboard />}>
-          {byleco && <Route path="userinfo" element={<UserInfo />} />}
-          <Route path="useredit" element={<EditUserInfo />} />
-          <Route path="services" element={<ServicesList />} />
-          <Route path="favourite" element={<Favourite />} />
-          <Route path="history" element={<History />} />
-          <Route path="addservice" element={<AddService />} />
-          <Route path="userlist" element={<UserList />} />
-        </Route>
+        {user && (
+          <Route path="dashboard" element={<Dashboard />}>
+            <Route path="services" element={<ServicesList />} />
+            <Route path="userinfo" element={<UserInfo />} />
+            <Route path="useredit" element={<EditUserInfo />} />
+            {!user.isAdmin && (
+              <>
+                <Route path="favourite" element={<Favourite />} />
+                <Route path="history" element={<History />} />
+                <Route path="makeappointment" element={<MakeAppointment />} />
+              </>
+            )}
+            {user.isAdmin && (
+              <>
+                <Route path="userlist" element={<UserList />} />
+                <Route path="addservice" element={<AddService />} />
+              </>
+            )}
+          </Route>
+        )}
         <Route path="*" element={<NotFound404 />} />
       </Routes>
     </Router>

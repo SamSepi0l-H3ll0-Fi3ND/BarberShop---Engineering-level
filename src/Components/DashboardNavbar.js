@@ -6,8 +6,8 @@ const DashboardNavbar = () => {
         <span className="text-white">Barber</span>
         <span className="text-main-red">Shop</span>
       </div>
-      <div className="self-center hidden md:flex">
-        Coś tam
+      <div className="self-center text-white hidden md:flex">
+      Your idea, our implementation
       </div>
     </div>
   );
