@@ -2,17 +2,21 @@ import ContentCutIcon from "@mui/icons-material/ContentCut";
 import LogoutIcon from "@mui/icons-material/Logout";
 import InfoIcon from "@mui/icons-material/Info";
 import { red } from "@mui/material/colors";
-import EditIcon from "@mui/icons-material/Edit";
 import AddIcon from "@mui/icons-material/Add";
 import ListIcon from "@mui/icons-material/List";
 import HistoryIcon from "@mui/icons-material/History";
 import ContactsIcon from "@mui/icons-material/Contacts";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useContext } from "react";
 import UserContext from "../Context";
 
 const Sidebar = () => {
+  const navigate = useNavigate();
+  const Logout = () => {
+    localStorage.removeItem("TOKEN");
+    navigate("/");
+  };
   const { user } = useContext(UserContext);
   return (
     <div className="flex flex-col z-10 bg-main-dark border-2 -mt-24 justify-between gap-6 border-main-red border-b-0 border-l-0 border-t-0 rounded-r-lg  w-20 hidden sm:flex  ">
@@ -79,6 +83,7 @@ const Sidebar = () => {
           fontSize="large"
           className="self-center mb-6 cursor-pointer"
           sx={{ color: red[800] }}
+          onClick={() => Logout()}
         ></LogoutIcon>
       </div>
     </div>
