@@ -28,7 +28,7 @@ const Service = ({ data }) => {
       <div class="flex flex-row card-body border-2 border-main-red rounded-xl h-full sm:gird-cols-1">
         <div className="flex flex-col w-5/12">
           <span class="text-white font-bold ">{title}</span>
-          <p className="truncate mt-4 w-full ... 2xl:text-clip">
+          <p className=" mt-4 w-full ">
             {description}
           </p>
           <button onClick={AddFav} className="btn btn-error btn-outline mt-8">

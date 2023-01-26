@@ -27,20 +27,20 @@ const UserInfo = () => {
             </div>
             <div className="grid grid-cols-2 gap-4 text-center ">
               <div className="flex flex-col space-y-2 text-main-red border-12">
-                <p>Twoje imie</p>
+                <p>First name</p>
                 <p className="text-white text-2xl "> {user.firstName} </p>
               </div>
               <div className="flex flex-col space-y-2 text-main-red">
-                <p>Twoje nazwisko</p>
+                <p>Last Name</p>
                 <p className="text-white text-2xl"> {user.lastName} </p>
               </div>
 
               <div className="col-span-2 flex flex-col space-y-2">
                 <div className="flex flex-col space-y-2 text-main-red">
-                  <p>Twoj numer telefonu</p>
+                  <p>Phone number</p>
                   <p className="text-white text-2xl"> {user.number} </p>
 
-                  <p>Twoj address email</p>
+                  <p>Emial address</p>
                   <p className="text-white text-2xl"> {user.email} </p>
                 </div>
               </div>

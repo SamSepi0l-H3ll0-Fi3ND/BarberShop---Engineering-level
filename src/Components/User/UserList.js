@@ -20,7 +20,7 @@ const UserList = () => {
  },[]);
 
  const users = user.length ? user.map((item) => 
-  <User key={item._id} user={item}/>
+  <User key={item._id} data={item}/>
 ) : <p>Brak użytkowników</p>;
 
   return (

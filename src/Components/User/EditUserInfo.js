@@ -101,10 +101,10 @@ const EditUserInfo = () => {
           </div>
           <div class=" grid grid-cols-1 gap-4 sm:grid-cols-2">
             <a class="btn bg-outline border-main-red text-dark-blue  border-2">
-              Przejdź do profilu
+              Back to the profile
             </a>
             <button class="btn btn-success text-main-dark border-2 border-success">
-              Zapisz zmiany
+              Save Changes
             </button>
           </div>
         </form>
